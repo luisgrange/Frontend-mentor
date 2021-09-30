@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;  position: absolute;
+      bottom: 0; left: 0;}
+    .attribution a { color: hsl(228, 45%, 44%);}
+
+    html{
+      --Very-dark-blue: hsl(233, 47%, 7%); /*(main background)*/
+      --Dark-desaturated-blue: hsl(244, 38%, 16%); /*(card background)*/
+      --Soft-violet: hsl(277, 64%, 61%); /* (accent)*/
+
+      /*  Neutral */
+
+      --White: hsl(0, 0%, 100%); /*(main heading, stats)*/
+      --Slightly-transparent-whit: hsla(0, 0%, 100%, 0.75); /*(main paragraph)*/
+      --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6); /* (stat headings)*/
+    }
+      /* ------------------------------------------------------------------------- */
+      body{
+        height: 100%;
+        color: var(--White);
+        background: var(--Very-dark-blue);
+      }
+
+      ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 480px;
+        top: 70%;
+      }
+      .container{
+          background: var(--Dark-desaturated-blue);
+          border-radius: .5rem;
+          display: flex;
+          flex-direction: row-reverse;
+          height: 50vh;
+          width: 50rem;
+          position: relative;
+          top: 115.5px;
+        }
+
+      .image{
+        background: url('./images/image-header-desktop.jpg') no-repeat;
+        background-size: cover;
+        filter: grayscale(100%) brightness(57%) sepia(100%) hue-rotate(251deg) saturate(537%) contrast(0.8);
+        height: 50vh;
+        width: 40rem;
+        position: relative;
+        left: 10rem;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+      }
+
+      .main-content h2, .main-content p.text{
+        text-align: justify;
+        width: 20rem;
+        position: relative;
+        left: 7rem;
+      }
+      li{
+        display: flex;
+        flex-direction: column;
+        padding: .8rem;
+      }
+
+      /*  MOBILE  */
+      @media (max-width: 370px){
+
+        .container{
+          background: var(--Dark-desaturated-blue);
+          width: 20rem;
+          height: 87vh;
+          border-radius: .5rem;
+          position: static;
+          display: block;
+        }
+        
+        .image{
+          background: url('./images/image-header-mobile.jpg') no-repeat;
+          background-size: cover;
+          background-position: center;
+          filter: grayscale(100%) brightness(57%) sepia(100%) hue-rotate(251deg) saturate(537%) contrast(0.8);
+          border-top-left-radius: .5rem;
+          border-top-right-radius: .5rem;
+          border-bottom-right-radius: 0;
+          height: 134px;
+          left: 0;
+        }
+
+        .main-content h2, .main-content p.text{
+          text-align: center;
+        }
+
+        .main-content h2{
+          font-size: 1.5rem;
+          font-weight: 800;
+          width: 16rem;
+          display: flex;
+          position: relative;
+          left: -3.8rem;
+        }
+        .main-content p.text{
+          width: 16rem;
+          position: relative;
+          left: -3.8rem;
+        }
+
+        ul{
+          display: block;
+          position: static;
+        }
+        li{
+          display: block;
+          padding: 0;
+        }
+      }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="image col-12 col-md-6 col-sm-12 col-xs-12 img-fluid mx-auto"></div>
+    </div>
+    <div class="row">
+      <div class="main-content col-6 col-md-6 col-sm-12 col-xs-12 mx-auto mt-2">
+        <h2>Get insights that help your business grow</h2>
+        <p class="text">Discover the benefitsof data analytics and make better decisions regarding revenue, customer experience, and overall efficiency</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="list col-6 col-md-6 col-sm-12 col-xs-12 mx-auto mt-2 d-block">
+        <ul>
+          <li><h5>10K+</h5><p>companies</p></li>
+          <li><h5>314</h5><p>templates</p></li>
+          <li><h5>12m+</h5><p>queries</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Luis</a>.
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
