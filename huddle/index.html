@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: var(--Soft-Magenta);
+      }
+
+      :root {
+        --Violet: hsl(257, 40%, 49%);
+        --Soft-Magenta: hsl(300, 69%, 71%);
+      }
+
+      body {
+        color: #fff;
+        background: url("./images/bg-desktop.svg") no-repeat var(--Violet);
+      }
+
+      .bloco2 h2 {
+        width: 20rem;
+      }
+      .bloco2 p {
+        width: 27rem;
+        margin-top: 1.5rem;
+      }
+
+      #btn {
+        border: none;
+        border-radius: 2rem;
+        width: 10.5rem;
+        height: 2.5rem;
+        cursor: pointer;
+        transition: 0.3s all;
+        color: var(--Violet);
+      }
+
+      #btn:hover {
+        background: var(--Soft-Magenta);
+        color: #fff;
+      }
+
+      .attribution {
+        position: relative;
+        top: 50px;
+        right: 28rem;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        position: relative;
+      }
+      li {
+        margin-right: 1rem;
+      }
+      li img {
+        width: 100%;
+      }
+      .icons {
+        align-items: center;
+        position: relative;
+        display: flex;
+        justify-content: right;
+        top: 5rem;
+        left: 3rem;
+      }
+      @media (max-width: 370px){
+
+        body{
+          width: 100vw;
+        }
+
+        .bloco2{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-self: flex-end;
+        }
+        .bloco2 h2, .bloco2 p{
+          align-self: center;
+          text-align: center;
+          position: relative;
+          left: 59%;
+        }
+
+        .bloco2 p{
+          width: 22rem;
+          font-size: 20px;
+        }
+
+        #btn{
+          justify-self: center;
+          align-self: center;
+          position: relative;
+          left: 65%;
+        }
+        Ul{
+          position: relative;
+          right: 50px;
+        }
+
+      .icons {
+        align-items: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 5rem;
+      }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-12 col-sm-12 col-xs-12 pt-5">
+          <img src="./images/logo.svg" class="img-fluid" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="illustration col-12 col-md-6 col-sm-12 col-xs-12 mt-5 pl-6">
+          <img
+            class="img-fluid"
+            src="./images/illustration-mockups.svg"
+            alt=""
+          />
+        </div>
+        <div class="bloco2 col-6 col-md-6 col-sm-12 col-xs-12 mt-5 pl-6">
+          <h2>Build The Community Your Fans Will Love</h2>
+          <p>
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button id="btn">Register</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="icons col-12 col-md-12 col-sm-12 col-xs-12">
+          <ul>
+            <li><img src="./images/icon-facebook.svg" alt="" /></li>
+            <li><img src="./images/icon-twitter.svg" alt="" /></li>
+            <li><img src="./images/icon-pinterest.svg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Luís F.</a>.
+      </p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
