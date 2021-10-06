@@ -9,6 +9,6 @@ function verify(){
     document.querySelector("#response").innerHTML = "Please provide a valid email addres";
   } 
   else{
-    console.log("ok...");
+    document.querySelector("#send").value = "''";
   }
 }
