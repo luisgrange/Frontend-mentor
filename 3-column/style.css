@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white : hsla(0, 0%, 100%, 0.75);  /*(paragraphs)*/
+    --Very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+body{
+    background-color: var(--Very-light-gray);
+    
+}
+
+.sed{background-color: var(--Bright-orange); height: 500px;}
+.suv{background-color: var(--Dark-cyan); height: 500px;}
+.lux{background-color: var(--Very-dark-cyan); height: 500px;}
+
+p{
+    color: var(--Transparent-white);
+}
+.title{
+    text-align: left!important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Very-light-gray);
+}
+
+.icon{
+    width: 20%;
+}
+
+button{
+    padding: .7rem;
+    width: 45%;
+    background: var(--Very-light-gray);
+    border: none;
+    border-radius: 3rem;
+    transition: .4s all ease-in-out;
+}
+
+.sed button{color: var(--Bright-orange);}
+.suv button{color: var(--Dark-cyan);}
+.lux button{color: var(--Very-dark-cyan);}
+
+.sed p, .sed img, .sed button,
+.suv p, .suv img, .suv button,
+.lux p, .lux img, .lux button{
+    margin-left: 1.5rem;
+}
+
+button:hover{
+    color: var(--Very-light-gray);
+    background: transparent;
+    border: 1px solid var(--Very-light-gray);
+}
+
+
+
+
+
+
+@media(max-width: 375px){
+    body{
+        background-color: var(--Very-light-gray);
+        
+    }
+
+    .sed{background-color: var(--Bright-orange);}
+    .suv{background-color: var(--Dark-cyan);}
+    .lux{background-color: var(--Very-dark-cyan);}
+
+    p{
+        color: var(--Transparent-white);
+    }
+    .title{
+        text-align: left!important;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 30px;
+        font-family: 'Big Shoulders Display', cursive;
+        color: var(--Very-light-gray);
+    }
+
+    .icon{
+        width: 20%;
+    }
+
+    button{
+        padding: .7rem;
+        width: 45%;
+        background: var(--Very-light-gray);
+        border: none;
+        border-radius: 3rem;
+        transition: .4s all ease-in-out;
+    }
+
+    .sed button{color: var(--Bright-orange);}
+    .suv button{color: var(--Dark-cyan);}
+    .lux button{color: var(--Very-dark-cyan);}
+
+    .sed p, .sed img, .sed button,
+    .suv p, .suv img, .suv button,
+    .lux p, .lux img, .lux button{
+        margin-left: 1.5rem;
+    }
+
+    button:hover{
+        color: var(--Very-light-gray);
+        background: transparent;
+        border: 1px solid var(--Very-light-gray);
+    }
+}
