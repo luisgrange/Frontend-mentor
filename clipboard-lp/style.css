@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,600;1,600&display=swap');
+
+:root{
+	--Strong-Cyan: hsl(171, 66%, 44%);
+	--Light-Blue: hsl(233, 100%, 69%);
+	--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+	--Grayish-Blue: hsl(201, 11%, 66%);
+	--Grayish: hsl(204, 21%, 91%);
+}
+
+@media (min-width: 720px){
+	/*		GLOBALS		*/
+	.btn{
+		margin-bottom: .5rem;
+		border-radius: 500px!important;
+		color: #fff;
+		transition: 2s all ease-in-out;
+	}
+	.ios{
+		background: var(--Strong-Cyan);
+	}
+	.mac{
+		background: var(--Light-Blue);
+	}
+
+	.btn:hover{
+		opacity: 0.9;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	h3,h4{
+		color: var(--Dark-Grayish-Blue) !important;
+		font-family: 'Bai Jamjuree', sans-serif;
+		font-weight: 600;
+	}
+
+	a,p{
+		color: var(--Grayish-Blue) !important;
+		font-family: 'Bai Jamjuree', sans-serif;
+		font-weight: 400;
+	}
+
+	/*		HEADER		*/
+	.header-image{
+		background-image: url("./images/bg-header-desktop.png");
+		background-repeat: no-repeat!important;
+		height: 300px;
+	}
+
+	.header-image img{
+		margin-top: 7rem;
+		height: 50%;
+	}
+
+	/*		MAIN		*/
+	.buttons-row{
+		margin-bottom: 5rem;
+	}
+
+	.buttons-col-ios{
+		display: flex;
+		justify-content: right;
+	}
+
+	.btn{
+		padding: .7rem!important;
+	}
+
+	.clip-text{
+		width: 46%;
+		margin-bottom: 3rem;
+	}
+
+	.image{
+		margin-left: -5rem;
+	}
+
+	.titles{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 2rem;
+	}
+
+	.titles h4, .titles p{
+		text-align: left!important;
+	}
+
+	.access-row{
+		margin-top: 7rem;
+	}
+
+	.access-row p{
+		width: 45%;
+	}
+
+	.icon-col small{
+	width: 70% !important;
+	}
+
+	.linha-logo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 5.5rem;
+	}
+
+	.buttons-final{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.buttons-final .col-ios{
+		display: flex;
+		justify-content: right!important;
+	}
+
+	/*		FOOTER		*/
+	footer .logo{
+		width: 30%;
+	}
+
+	footer .logo-col{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	footer .social{
+		padding: .5rem;
+	}
+
+	footer .row{
+		background: var(--Grayish);
+		height: 150px;
+		display: flex;
+		justify-content: center;
+	}
+
+}
+
+
+@media (max-width:  375px){
+
+	/*		GLOBALS		*/
+	.btn{
+		margin-bottom: .5rem;
+		border-radius: 500px!important;
+		color: #fff;
+	}
+	.ios{
+		background: var(--Strong-Cyan);
+	}
+	.mac{
+		background: var(--Light-Blue);
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	h3,h4{
+		color: var(--Dark-Grayish-Blue) !important;
+	}
+
+	a,p{
+		color: var(--Grayish-Blue) !important;
+	}
+
+	
+	/*		HEADER		*/
+	.header-image{
+		background-image: url("./images/bg-header-mobile.png");
+		background-repeat: no-repeat!important;
+	}
+	
+
+	.buttons-col{
+		display: flex;
+		justify-content: center;
+	}
+
+	.image{
+		display: flex;
+		justify-content: center;
+	}
+
+	main img{
+		width: 70%;
+		
+	}
+
+	.titles p, .titles h4{
+		text-align: center;
+	}
+
+	.access-row{
+		margin-top: 3rem;
+	}
+
+	.icon{
+		width: 15%;
+	}
+
+	.linha-logo{
+		flex-direction: column;
+		margin-top: 3rem;
+	}
+
+	.logos{
+		margin-top: 1.5rem;
+		width: 40%;
+	}
+
+	.buttons-final{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.col-ios, .col-mac{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
