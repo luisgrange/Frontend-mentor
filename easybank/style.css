@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,700;1,700&display=swap');
+:root{
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-LightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    font-family: 'Public Sans', sans-serif;
+}
+
+@media (max-width: 675px){
+
+    .mob-active{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    .image-row{
+        background-image: url("./images/bg-intro-mobile.svg");
+        background-repeat: no-repeat;
+        height: 353px;
+        width: 360px;
+    }
+
+    .image-row img{
+        height: 464px;
+        width: 342px;
+        margin: -8.5rem 0 0 0;
+    }
+
+    .image-col{
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        z-index: 0;
+    }
+
+    button.invite{
+        color: var(--White);
+        border: none;
+        border-radius: 3rem;
+        padding: .5rem;
+        width: 150px;
+        background: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    }
+
+    /*  WHY CHOOSE EASYBANK    */
+    .easyWhy{
+        background: var(--Light-Grayish-Blue);
+    }
+
+    .easyWhy h3{
+        color: var(--Dark-Blue);
+        font-weight: 700;
+    }
+    .easyWhy p{
+        text-align: center;
+        color: var(--Grayish-Blue);
+    }
+
+
+    .easyWhy .img-title{
+        color: var(--Dark-Blue);
+        font-weight: 700;
+    }
+
+    /*  ARTICLES    */
+    .articles-title h3{
+        text-align: center;
+        color: var(--Dark-Blue);
+    }
+    .articles img{
+        width: 85%;
+        border-radius: .5rem;
+        margin-top: 1rem;
+    }
+
+    .articles p strong{
+        color: var(--Dark-Blue);
+        width: 10%;
+    }
+
+    .articles p{
+        text-align: left;
+        color: var(--Grayish-Blue);
+        font-size: 13px;
+        margin: 0.1rem 2rem;
+    }
+
+    .articles-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*  FOOTER ROW  */
+    .footer-row{
+        background: var(--Dark-Blue);
+    }
+
+    .footer-row a{
+        text-decoration: none;
+        color: var(--White);
+    }
+
+    .footer-row span{
+        color: var(--White);
+        font-size: 12px;
+    }
+
+    .footer-row img{
+        filter: brightness(1) invert(0);
+    }
+
+    .footer-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .footer-menu{
+        margin-top: 0;
+    }
+
+    .footer-row .icon{
+        margin-top: 1rem;
+        padding: .4rem;
+    }
+    
+    /*  NAV MENU    */
+    .mob-active button{
+        cursor: pointer;
+        background-image: url(./images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+        border: none;
+        height: 20px;
+        width: 20px;
+        z-index: 9999;
+    }
+
+    .menu{
+        visibility: hidden;
+    }
+
+    .menu.active{
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, .2);
+        height: 120vh;
+        position: fixed;
+        top: -99px;
+        width: 100%;
+        z-index: 999;
+    }
+    
+    .nav{
+        visibility: hidden;
+    }
+    .box-menu{
+        display: flex;
+        justify-content: center;
+        z-index: 10;
+    }
+    .nav.active{
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background: rgb(255, 255, 255);
+        width: 90%;
+        height: 190px;
+        border-radius: .4rem;
+
+        position: relative;
+        top: 0;
+        z-index: 10;
+    }
+    .nav.active li a{
+        text-decoration: none;
+        color: var(--Dark-Blue);
+        font-weight: 600;
+        padding: .5rem;
+        z-index: 10;
+
+    }
+}
