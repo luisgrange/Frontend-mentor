@@ -245,7 +245,7 @@ footer .social li i {
 
 /* FIM FOOTER  */
 /*  MOBILE  */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   header img {
     width: 50%;
   }
