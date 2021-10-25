@@ -1,0 +1,229 @@
+$Dark-Blue: hsl(240, 38%, 20%);
+$Grayish-Blue: hsl(240, 18%, 77%);
+
+@mixin buttons{
+    background: #fff;
+    padding: .6rem;
+    border: none;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: 3px 3px rgba(0,0,0,0.4);
+}
+
+body{
+    color: $Dark-Blue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carrousel-card{
+    height: 78%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#carrousel-card::before{
+    content: '';
+    background: url('./images/pattern-quotes.svg') center/contain no-repeat;
+    position: absolute;
+    top: 0;
+    left: 180px;
+    width: 13%;
+    height: 38%;
+}
+
+#carrousel-card::after{
+    content: "";
+    background: url('./images/pattern-bg.svg') center/contain no-repeat;
+    position: absolute;
+    /* bottom: 0; */
+    right: 0;
+    width: 40%;
+    height: 116%;
+    z-index: -1;
+}
+
+#curves{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.image img{
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+}
+
+.text{
+    
+    flex-direction: column;
+    width: 60%;
+    text-align: left;
+}
+
+.box-item img{
+    width: 30%;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+}
+ button{
+     background: none;;
+ }
+.box-item{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+button img{
+    @include buttons();
+}
+.carousel-control-next img{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.text p{
+    position: relative;
+    margin-left: 4rem;
+    font: normal normal 400 30px/40px Inter;
+    width: 100%;
+}
+
+.text p.name strong{
+    font: normal normal 700 25px/40px Inter;
+    color: $Dark-Blue;
+}
+
+.text p.name{
+    font: normal normal 400 18px/40px Inter;
+    color: $Grayish-Blue;
+}
+#carrousel-card .carousel-control-prev{
+    left: 70%!important;
+    
+}
+#carrousel-card .carousel-control-next{
+    right: 27%!important;
+    
+}
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: none;
+    border:none;
+    opacity: 1;
+    /* transition: opacity .15s ease; */
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width: 640px){
+    #carrousel-card{
+        height: 100%;
+        width: 100%;
+    }
+    .box-item{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-item img{
+        width: 75%;
+        box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+        margin-bottom: 3rem;
+    }
+    
+    .text{
+        width: 100%;
+    }
+    .box-item p{
+        font: normal normal 400 20px/24px Inter;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .box-item p.name strong{
+        font: normal normal 700 20px/24px Inter;
+        width: 100%;
+        margin: 0;
+    }
+
+    .box-item p.name{
+        font: normal normal 400 20px/24px Inter;
+        width: 100%;
+        margin: 0;
+        
+    }
+
+    .image img{
+        width: 65%;
+    }
+
+    #carrousel-card::before{
+        content: '';
+        background: url('./images/pattern-quotes.svg') center/contain no-repeat;
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        width: 13%;
+        height: 38%;
+    }
+
+    #carrousel-card::after {
+        content: "";
+        background: url(./images/pattern-bg.svg) center/contain no-repeat;
+        position: absolute;
+        /* right: 0; */
+        width: 94%;
+        /* height: auto; */
+        z-index: -1;
+        bottom: 10%;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        background: none;
+        border:none;
+        opacity: 1;
+        /* transition: opacity .15s ease; */
+    }
+
+    #carrousel-card .carousel-control-prev{
+    left: 44%!important;
+    
+}
+    #carrousel-card .carousel-control-next{
+        right: 47%!important;
+    }
+
+    
+}
