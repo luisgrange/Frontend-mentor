@@ -1,0 +1,98 @@
+@media (max-width: 600px) {
+  .slide-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .slide-box::before {
+    content: "";
+    background: url("./images/pattern-bg.svg") center/cover no-repeat;
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 60%;
+    z-index: -1;
+  }
+
+  .slide-box img {
+    width: 75%;
+    margin-top: 1rem;
+  }
+  .slide-box .slide-text {
+    padding-top: 1.5rem;
+    position: relative;
+  }
+  .slide-box .slide-text p {
+    font: normal normal 400 20px/20px Inter;
+    text-align: center;
+    color: #202046;
+  }
+  .slide-box .slide-sub-text small {
+    color: #babacf;
+  }
+  .slide-box .slide-text::before {
+    content: "";
+    background: url("./images/pattern-quotes.svg") center/cover no-repeat;
+    position: absolute;
+    width: 13%;
+    height: 15%;
+    left: 30%;
+    top: 8%;
+  }
+
+  .carousel-control-next {
+    right: 45.5% !important;
+  }
+
+  .carousel-control-next img {
+    background: #fff;
+    padding: 0.6rem;
+    border: none;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .carousel-control-prev {
+    left: 42.5% !important;
+  }
+
+  .carousel-control-prev img {
+    background: #fff;
+    padding: 0.6rem;
+    border: none;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 53%;
+    bottom: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4%;
+    padding: 0;
+    background: none;
+    border: 0;
+    opacity: 1;
+    transition: opacity 0.15s ease;
+  }
+
+  .curve {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+}/*# sourceMappingURL=style.css.map */
