@@ -305,6 +305,7 @@ footer .social li i {
     width: 80%;
   }
   #third .formulario .btn-div {
+    display: block;
     width: 100%;
     justify-content: center;
   }
