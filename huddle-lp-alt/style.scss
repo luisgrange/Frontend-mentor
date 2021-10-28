@@ -1,0 +1,528 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+/*COLORS*/
+$Pink: hsl(322, 100%, 66%);
+$Very-Pale-Cyan: hsl(193, 100%, 96%);
+$Very-Dark-Cyan: hsl(192, 100%, 9%);
+$Grayish-Blue: hsl(208, 11%, 55%);
+
+
+
+/*MIXINS*/
+@mixin button(){
+    border: none;
+    border-radius: 34px;
+    padding: .2rem;
+    width: 80%;
+    font: normal normal 600 16px/20px Poppins;
+}
+/* DEKTOP */
+@media (max-width: 25604px) and (min-width: 768px){
+    img{
+        width: 40%;
+    }
+    p{
+        font: normal normal 400 16px/20px 'Open Sans';
+        color: $Grayish-Blue;
+    }
+    li a{
+        text-decoration: none;
+        font: normal normal 400 16px/20px 'Open Sans';
+        color: #fff;
+        transition: .2s all;
+    }
+
+    li a:hover{
+        font: normal normal 400 16px/20px 'Open Sans';
+        color: $Grayish-Blue;
+        opacity: .8;
+    }
+    button:hover{
+        opacity: .8;
+    }
+
+    #top-init{
+        background: url('./images/bg-hero-desktop.svg') $Very-Pale-Cyan center/cover no-repeat;
+        
+    }
+
+    #top-init header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #top-init header button{
+        @include button();
+        width: 30%;
+        background: #fff;
+        color: $Very-Dark-Cyan;
+        box-shadow: 0 0 3px 2px rgba(0,0,0,0.2);
+        transition: .2s all;
+    }
+
+    #top-init .content{
+        margin: 2rem 0 0 0;
+        display: block;
+        text-align: left;
+        color: $Very-Dark-Cyan;
+    }
+    #top-init .content h1{
+        font: normal normal 700 30px/30px 'Open Sans';
+        text-align: left;
+
+    }
+    #top-init .content p{
+        color: $Very-Dark-Cyan;
+        font: normal normal 400 22px/20px 'Open Sans';
+        text-align: left;
+        justify-content: left;
+        align-items: center
+    }
+
+    #top-init .button-sec{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+  
+    #top-init .content button{
+        @include button();
+        width: 60%;
+        padding: .5rem;
+        background-color: $Pink;
+        color: #fff;
+        margin-bottom: 1rem;
+        transition: .2s all;
+    }
+   
+    #top-init .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0 1rem 0;
+    }
+    #top-init .image > img{
+        width: 70%;
+    }
+
+    
+    /*FIM HEADER*/
+    /*GROW TOGETHER*/
+    #grow{
+        padding-top: 1.5rem;
+    }
+    #grow , 
+    #grow .card-grow,  
+    #grow .card-grow .image{
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #grow .card-grow{
+        box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+        border-radius: 14px;
+    }
+    #grow .card-grow .image img{
+        width: 70%;
+        padding: 1rem 0;
+    }
+    #grow .card-grow .text{
+        text-align: left;
+        color: $Very-Dark-Cyan;
+        padding-left: 3rem;
+    }
+    #grow .card-grow .text h2{
+        font: normal normal 700 27px/25px 'Open Sans';
+        color: $Very-Dark-Cyan;
+    }
+    #grow .card-grow .text p{
+        width: 60%;
+    }
+    /*FIM GROW TOGETHER*/
+
+    /*FLOWING CONVERSATION*/
+    #flowing{
+        padding-top: 1.5rem;
+    }
+    #flowing , 
+    #flowing .card-flowing,  
+    #flowing .card-flowing .image{
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #flowing .card-flowing{
+        box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+        border-radius: 14px;
+    }
+    #flowing .card-flowing .image img{
+        width: 70%;
+        padding: 1rem 0;
+    }
+
+    #flowing .card-flowing .text{
+        text-align: left;
+        color: $Very-Dark-Cyan;
+        padding-left: 3rem;
+    }
+    #flowing .card-flowing .text h2{
+        font: normal normal 700 27px/25px 'Open Sans';
+    }
+    #flowing .card-flowing .text p{
+        width: 60%;
+    }
+    /*FIM FLOWING CONVERSATION*/
+
+    /*YOUR USERS*/
+    #users{
+        padding-top: 1.5rem;
+    }
+    #users , 
+    #users .card-users,  
+    #users .card-users .image{
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #users .card-users{
+        box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+        border-radius: 14px;
+    }
+    #users .card-users .image img{
+        width: 70%;
+        padding: 1rem 0;
+    }
+    #users .card-users .text{
+        text-align: left;
+        color: $Very-Dark-Cyan;
+        padding-left: 3rem;
+    }
+    #users .card-users .text h2{
+        font: normal normal 700 27px/25px 'Open Sans';
+        color: $Very-Dark-Cyan;
+    }
+    #users .card-users .text p{
+        width: 60%;
+    }
+    /*FIM YOUR USERS*/
+
+    /*FOOTER*/
+    #end{
+        margin: 9rem 0 0 0;
+        position: relative;
+    }
+    #end .question{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #end .question .container{
+        position: absolute;
+
+    }
+
+    #end .question .question-card{
+        box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+        border-radius: 14px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+        background-color: #fff;
+    }
+    #end .question .question-card button{
+        @include button();
+        color: #fff;
+        background: $Pink;
+        padding: .8rem;
+        margin: 1rem 0;
+        width: 70%;
+    }
+    #end footer{
+        background: $Very-Dark-Cyan;
+        color: $Very-Pale-Cyan;
+        padding-top: 6rem;
+    }
+    #end footer img{
+        filter: brightness(0) invert(1) ;
+        width: 30%;
+    }
+    #end .linha{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+    #end .links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+    #end ul{
+        list-style: none;
+        padding: 0;
+    }
+    
+    
+    #end .icon{
+        height: 2%;
+        width: 5%;
+    }
+
+    #end .social li{
+        padding: .5rem;
+    }
+    #end .social li i{
+        font-size: 20px;
+    }
+}
+/* FIM DEKTOP */
+
+/* MOBILE */
+@media(max-width: 767px){
+    img{
+        width: 70%;
+    }
+    p{
+        font: normal normal 400 16px/20px 'Open Sans';
+        color: $Grayish-Blue;
+    }
+    li a{
+        text-decoration: none;
+        font: normal normal 400 16px/20px 'Open Sans';
+        color: #fff;
+        transition: .2s all;
+    }
+
+    li a:hover{
+        font: normal normal 400 16px/20px 'Open Sans';
+        color: $Grayish-Blue;
+        opacity: .8;
+    }
+    /*HEADER*/
+    #top-init{
+        background: url('./images/bg-hero-mobile.svg') $Very-Pale-Cyan center/cover no-repeat;
+    }
+
+
+    #top-init header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #top-init header button{
+        @include button();
+        background: #fff;
+        color: $Very-Dark-Cyan;
+        box-shadow: 0 0 3px 2px rgba(0,0,0,0.4);
+        transition: .2s all;
+    }
+
+    #top-init .content{
+        margin: 2rem 0 0 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $Very-Dark-Cyan;
+    }
+    #top-init .content h1{
+        font: normal normal 700 28px/30px 'Open Sans';
+    }
+    #top-init .content p{
+        color: $Very-Dark-Cyan;
+        font: normal normal 400 19px/20px 'Open Sans';
+    }
+
+    #top-init .button-sec{
+        width: 100%;
+    }
+  
+    #top-init .content button{
+        @include button();
+        width: 60%;
+        padding: .5rem;
+        background-color: $Pink;
+        color: #fff;
+        margin-bottom: 1rem;
+        transition: .2s all;
+    }
+
+    #top-init .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0 1rem 0;
+    }
+
+    
+
+    #top-init button:hover{
+        opacity: .8;
+    }
+    /*FIM HEADER*/
+    /*GROW TOGETHER*/
+    #grow{
+        padding-top: 1.5rem;
+    }
+    #grow , 
+    #grow .card-grow,  
+    #grow .card-grow .image{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #grow .card-grow{
+        box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+        border-radius: 14px;
+    }
+    #grow .card-grow .text{
+        text-align: center;
+        color: $Very-Dark-Cyan;
+    }
+    #grow .card-grow .text h2{
+        font: normal normal 700 27px/25px 'Open Sans';
+        color: $Very-Dark-Cyan;
+    }
+    /*FIM GROW TOGETHER*/
+
+    /*FLOWING CONVERSATION*/
+    #flowing{
+        padding-top: 1.5rem;
+    }
+    #flowing , 
+    #flowing .card-flowing,  
+    #flowing .card-flowing .image{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #flowing .card-flowing{
+        box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+        border-radius: 14px;
+    }
+
+    #flowing .card-flowing .text{
+        text-align: center;
+        color: $Very-Dark-Cyan;
+    }
+    #flowing .card-flowing .text h2{
+        font: normal normal 700 27px/25px 'Open Sans';
+        color: $Very-Dark-Cyan;
+    }
+    /*FIM FLOWING CONVERSATION*/
+
+    /*YOUR USERS*/
+    #users{
+        padding-top: 1.5rem;
+    }
+    #users , 
+    #users .card-users,  
+    #users .card-users .image{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #users .card-users{
+        box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+        border-radius: 14px;
+    }
+
+    #users .card-users .text{
+        text-align: center;
+        color: $Very-Dark-Cyan;
+    }
+    #users .card-users .text h2{
+        font: normal normal 700 27px/25px 'Open Sans';
+        color: $Very-Dark-Cyan;
+    }
+    /*FIM YOUR USERS*/
+
+    /*FOOTER*/
+    #end{
+        margin: 9rem 0 0 0;
+        position: relative;
+    }
+    #end .question{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #end .question .container{
+        position: absolute;
+
+    }
+
+    #end .question .question-card{
+        box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+        border-radius: 14px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 1;
+        background-color: #fff;
+    }
+    #end .question .question-card button{
+        @include button();
+        color: #fff;
+        background: $Pink;
+        padding: .5rem;
+        margin-bottom: 1rem;
+        transition: .2s all;
+    }
+    #end footer{
+        background: $Very-Dark-Cyan;
+        color: $Very-Pale-Cyan;
+        padding-top: 6rem;
+    }
+    #end footer img{
+        filter: brightness(0) invert(1) ;
+        width: 50%;
+    }
+    #end ul{
+        list-style: none;
+        padding: 0;
+    }
+
+    #end .info ul, #end .info ul li{
+        padding-top: 1rem;
+    }
+    #end .icon{
+        height: 5%;
+        width: 5%;
+    }
+
+    #end .social li{
+        padding: .5rem;
+    }
+    /*FIM FOOTER*/
+    
+
+
+
+}
+/*FIM MOBILE*/
+
