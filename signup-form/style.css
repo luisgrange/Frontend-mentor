@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 /*COLORS*/
 body {
-  background-color: #ff7a7a;
   color: #fff;
 }
 
@@ -135,6 +134,12 @@ button:hover {
   #formulario .form-box span {
     width: 100%;
     text-align: left !important;
+  }
+  #formulario .onError {
+    background-image: url("./images/icon-error.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 1rem;
   }
 
   /* FIM FORMULARIO  */

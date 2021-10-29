@@ -17,7 +17,6 @@ $Grayish-Blue: hsl(246, 25%, 77%);
     border-radius: 10px;
 }
 body{
-    background-color: $Red;
     color: #fff;
 }
 .errorMessage{
@@ -148,6 +147,13 @@ button:hover{
         .form-box span{
             width: 100%;
             text-align: left!important;
+        }
+
+        .onError{
+            background-image: url("./images/icon-error.svg");
+            background-position: right center;
+            background-repeat: no-repeat;
+            padding-right: 1rem;
         }
     }
     /* FIM FORMULARIO  */
