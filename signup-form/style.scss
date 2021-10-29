@@ -1,0 +1,260 @@
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+/*COLORS*/
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+$Blue: hsl(248, 32%, 49%);
+$Dark-Blue: hsl(249, 10%, 26%);
+$Grayish-Blue: hsl(246, 25%, 77%);
+
+@mixin btn($bg-color, $padding, $b-shadow, $wdth){
+    background: $bg-color;
+    padding: $padding;
+    box-shadow: 0 7px $b-shadow 1px rgba(0,0,0,0.3);
+    width: $wdth;
+    border: none;
+    border-radius: 10px;
+}
+body{
+    background-color: $Red;
+    color: #fff;
+}
+.errorMessage{
+    color:hsl(0, 100%, 74%);
+    font: normal normal 400 14px/20px Poppins;
+    text-align: center;
+    display: none;
+}
+button{
+    transition: .2s all ease-in-out;
+}
+
+button:hover{
+    opacity: .9;
+}
+
+@media(min-width: 768px){
+    body{
+        background: url('/images/bg-intro-desktop.png') $Red center/cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*  TEXT  */
+    #text-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+    }
+    #text-content{
+        .col-md-12{
+            width: 100%;
+        }
+        .text h1{
+            font: normal normal 700 35px/35px Poppins;
+            width: 70%;
+        }
+        .text p{
+            font: normal normal 400 16px/35px Poppins;
+            width: 100%;
+
+        }
+        .text p, .text h1{
+            text-align: left!important;
+        }
+
+        .row{
+            justify-content: center;
+        }
+
+    }
+    /* FIM TEXT  */
+    /* FORMULARIO  */
+    #formulario{
+        .button-area{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button-area button{
+            @include btn($Blue, 1rem, 1px, 100%);
+            color: #fff;
+        }
+        .form-box{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 1px 1px rgba(0,0,0,0.3);
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .row{
+            justify-content: left;
+        }
+        
+        
+        form{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .form-box form input{
+            margin-bottom: 1rem;
+            padding: .5rem;
+            width: 100%;
+            border: 1px solid $Dark-Blue;
+            border-radius: 5px;
+        }
+
+        .form-box button{
+            @include btn($Green, .7rem, 1px, 100%);
+            color: #fff;
+        }
+
+        .form-box p{
+            padding-top: 1rem;
+            color: $Grayish-Blue;
+        }
+        .form-box a{
+            color: $Red;
+            text-decoration: none;
+            transition: .3s all ease-in-out;
+        }
+
+        .form-box a:hover{
+            color: #ff1f1f;
+            border-bottom: 1px dashed #ff1f1f;
+        }
+
+        .form-box span{
+            width: 100%;
+            text-align: left!important;
+        }
+    }
+    /* FIM FORMULARIO  */
+
+
+
+}
+/*MOBILE*/
+@media (max-width: 767px){
+    body{
+        background: url('/images/bg-intro-mobile.png') $Red center/cover no-repeat;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    /*  TEXT  */
+    #text-content{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        color: #fff;
+        padding-top: 1rem;
+    }
+
+    #text-content{
+        .text h1{
+            font: normal normal 700 30px/35px Poppins;
+        }
+
+        .text p {
+            font: normal normal 400 15px/25px Poppins;
+        }
+
+        
+    }
+    /* FIM TEXT */
+
+    /* FORMULARIO */
+    #formulario{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.5rem;
+    }
+
+    #formulario{
+
+        .button-area{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .button-area button{
+            font: normal normal 600 24px/20px Poppins;
+            color: #fff;
+            @include btn($Blue, 1rem, 2px, 100%);
+        }
+
+        .button-area button span{
+            font: normal normal 400 15px/20px Poppins;
+        }
+        
+        .form-box{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 1px 1px rgba(0,0,0,0.3);
+        }
+
+        .form-box form{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+
+        }
+
+        .form-box form input{
+            margin-bottom: 1rem;
+            padding: .5rem;
+            width: 100%;
+            border: 1px solid $Dark-Blue;
+            border-radius: 5px;
+        }
+
+        .form-box button{
+            @include btn($Green, 1rem, 0, 95%);
+            box-shadow: 0 2px 1px 1px rgba(0,0,0,0.3);
+            font: normal normal 600 18px/20px Poppins;
+            color: #fff;
+        }
+
+        .form-box p{
+            padding-top: 1rem;
+            font: normal normal 400 16px/20px Poppins;
+            color: $Grayish-Blue;
+        }
+
+        .form-box p a{
+            color: $Red;
+            text-decoration: none;
+        }
+
+        
+    }
+    /* FIM FORMULARIO */
+
+
+}
