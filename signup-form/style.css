@@ -89,6 +89,14 @@ button:hover {
   #formulario .row {
     justify-content: left;
   }
+  #formulario .aux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
   #formulario form {
     display: flex;
     flex-flow: column nowrap;
@@ -97,7 +105,6 @@ button:hover {
     width: 100%;
   }
   #formulario .form-box form input {
-    margin-bottom: 1rem;
     padding: 0.5rem;
     width: 100%;
     border: 1px solid #3e3c49;
@@ -135,7 +142,7 @@ button:hover {
 /*MOBILE*/
 @media (max-width: 767px) {
   body {
-    background: url("/images/bg-intro-mobile.png") #ff7a7a center/cover no-repeat;
+    background: url("/images/bg-intro-mobile.png") #ff7a7a center/cover;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -195,6 +202,14 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 3px 1px 1px rgba(0, 0, 0, 0.3);
   }
+  #formulario .aux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding-bottom: 0.5rem;
+  }
   #formulario .form-box form {
     display: flex;
     flex-flow: column nowrap;
@@ -203,7 +218,6 @@ button:hover {
     width: 95%;
   }
   #formulario .form-box form input {
-    margin-bottom: 1rem;
     padding: 0.5rem;
     width: 100%;
     border: 1px solid #3e3c49;
