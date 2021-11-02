@@ -10,5 +10,4 @@
 <a href="https://luisgrange.github.io/Frontend-mentor/social-proof/">Social Proof page</a><br>
 <a href="https://luisgrange.github.io/Frontend-mentor/stats-preview/">Stats-preview</a><br>
 <a href="https://luisgrange.github.io/Frontend-mentor/signup-form/">Signup Form one page</a>
-<a href="https://luisgrange.github.io/Frontend-mentor/coding-bootcamp/">Coding Bootcamp</a><br>
 
