@@ -1,0 +1,118 @@
+body {
+  color: white;
+  background: #0d192b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cardbody {
+  background: #14253d;
+  width: 25%;
+  height: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 4px 0px 12px 5px;
+}
+
+.cardbody .card-top img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.cardbody .card-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  background: #00fff7;
+  height: 96%;
+  width: 100%;
+  opacity: 0.8;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.overlay::after {
+  content: url("./images/icon-view.svg");
+  filter: brightness(100%);
+}
+
+.card-top:hover .overlay {
+  display: flex;
+  cursor: pointer;
+}
+
+.card-middle p:first-child {
+  font-weight: 700;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.card-middle p:first-child:hover {
+  color: #00fff7;
+}
+
+.card-middle p span {
+  color: #8bacda;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info span {
+  margin: 0;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-top: 1px solid #2f415b;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.card-bottom img {
+  width: 10%;
+}
+
+.card-bottom p {
+  margin: 0%;
+  padding-left: 1rem;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.card-bottom p:not(span):hover {
+  color: #00fff7;
+}
+
+.card-bottom p span {
+  color: #8bacda;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}/*# sourceMappingURL=style.css.map */

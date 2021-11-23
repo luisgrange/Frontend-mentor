@@ -1,0 +1,114 @@
+$Soft-blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+$Very-dark-blue-b: hsl(217, 54%, 11%);
+$Very-dark-blue-c: hsl(216, 50%, 16%);
+$Very-dark-blue-l: hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+
+
+body{
+    color: $White;
+    background: $Very-dark-blue-b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cardbody{
+    background: $Very-dark-blue-c;
+    width: 25%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 30%) 4px 0px 12px 5px;
+}
+.cardbody .card-top img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.cardbody .card-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .4s ease;
+
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    background: $Cyan;
+    height: 96%;
+    width: 100%;
+    opacity: .8;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: all .5s ease;
+
+}
+
+.overlay::after{
+    content: url('./images/icon-view.svg');
+    filter: brightness(100%);
+}
+
+.card-top:hover .overlay{
+    display: flex;
+    cursor: pointer;
+
+}
+
+.card-middle p:first-child{
+    font-weight: 700;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.card-middle p:first-child:hover{
+    color: $Cyan
+}
+.card-middle p span{
+    color: $Soft-blue;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info span{
+    margin: 0;
+}
+.card-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-top: 1px solid $Very-dark-blue-l;
+    padding-top: 1rem;
+    margin-top: 1rem;
+
+}
+
+.card-bottom img{
+    width: 10%
+}
+
+.card-bottom p{
+    margin: 0%;
+    padding-left: 1rem;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.card-bottom p:not(span):hover{
+    color: $Cyan;
+}
+.card-bottom p span{
+    color: $Soft-blue;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
