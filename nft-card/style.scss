@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
 $Soft-blue: hsl(215, 51%, 70%);
 $Cyan: hsl(178, 100%, 50%);
 $Very-dark-blue-b: hsl(217, 54%, 11%);
@@ -66,7 +68,7 @@ body{
 }
 
 .card-middle p:first-child{
-    font-weight: 700;
+    font: normal normal 600 18px/20px Outfit;
     transition: all .4s ease;
     cursor: pointer;
 }
@@ -75,6 +77,7 @@ body{
 }
 .card-middle p span{
     color: $Soft-blue;
+    font: normal normal 400 18px/20px Outfit;
 }
 .info{
     display: flex;
@@ -83,7 +86,9 @@ body{
 }
 .info span{
     margin: 0;
+    font: normal normal 300 16px/20px Outfit;
 }
+
 .card-bottom{
     display: flex;
     align-items: center;
@@ -103,14 +108,16 @@ body{
     padding-left: 1rem;
     transition: all .4s ease;
     cursor: pointer;
+    font: normal normal 400 18px/20px Outfit;
 }
+
 .card-bottom p:not(span):hover{
     color: $Cyan;
 }
 .card-bottom p span{
     color: $Soft-blue;
 }
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; font: normal normal 400 14px/20px Outfit;} 
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media (max-width: 768px){

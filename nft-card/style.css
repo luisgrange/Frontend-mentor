@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 body {
   color: white;
   background: #0d192b;
@@ -57,7 +58,7 @@ body {
 }
 
 .card-middle p:first-child {
-  font-weight: 700;
+  font: normal normal 600 18px/20px Outfit;
   transition: all 0.4s ease;
   cursor: pointer;
 }
@@ -68,6 +69,7 @@ body {
 
 .card-middle p span {
   color: #8bacda;
+  font: normal normal 400 18px/20px Outfit;
 }
 
 .info {
@@ -78,6 +80,7 @@ body {
 
 .info span {
   margin: 0;
+  font: normal normal 300 16px/20px Outfit;
 }
 
 .card-bottom {
@@ -98,6 +101,7 @@ body {
   padding-left: 1rem;
   transition: all 0.4s ease;
   cursor: pointer;
+  font: normal normal 400 18px/20px Outfit;
 }
 
 .card-bottom p:not(span):hover {
@@ -111,6 +115,7 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  font: normal normal 400 14px/20px Outfit;
 }
 
 .attribution a {
