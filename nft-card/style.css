@@ -14,7 +14,7 @@ body {
   height: auto;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.3) 4px 0px 12px 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 4px 8px 12px 5px;
 }
 
 .cardbody .card-top img {
@@ -115,4 +115,14 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media (max-width: 768px) {
+  .cardbody {
+    width: 95%;
+  }
+
+  .attribution {
+    margin-top: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

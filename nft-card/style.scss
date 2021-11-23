@@ -22,7 +22,7 @@ body{
     height: auto;
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: rgb(0 0 0 / 30%) 4px 0px 12px 5px;
+    box-shadow: rgb(0 0 0 / 30%) 4px 8px 12px 5px;
 }
 .cardbody .card-top img{
     width: 100%;
@@ -112,3 +112,12 @@ body{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 768px){
+    .cardbody{
+        width: 95%;
+    }
+    .attribution{
+        margin-top: 1.5rem;
+    }
+}
