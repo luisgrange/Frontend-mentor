@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+
+:root{
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Blue: hsl(228, 39%, 23%);
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Vary-Light-Gray: hsl(0, 0%, 98%);
+}
+
+/*HEADER*/
+header{
+    padding: 30px 0;
+}
+header .col-3, header .col-6, .btn-header{
+    display: flex; 
+    align-items: center;
+}
+header nav.nav-bar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+.nav-bar li a{
+    color: var(--Very-Dark-Blue);
+    text-decoration: none;
+    font: normal normal 500 18px/25px 'Be Vietnam pro';
+}
+.btn-header{
+    justify-content: end;
+    width: 100%;
+}
+
+.btn{
+    background-color: var(--Bright-Red);
+    color: #fff;
+    font: normal normal 400 16px/20px 'Be Vietnam pro';
+    box-shadow: 0px 5px 15px hsl(12deg 88% 59% / 40%);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: .7rem;
+    width: 60%;
+    transition: all .3s ease-in-out;
+}
+.btn:hover{
+    filter: brightness(1.1) grayscale(.1);
+    color: #fff;
+}
+/*MAIN*/
+main{
+    margin-top: 5rem ;
+}
+#parte1{
+    margin-bottom: 5rem;
+}
+#parte1 h2{
+    color: var(--Dark-Blue);
+    font: normal normal 800 45px/55px 'Be Vietnam pro';
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+#parte1 p{
+    font: normal normal 400 14px/30px 'Be Vietnam pro';
+    color: var(--Dark-Grayish-Blue);
+    width: 310px;
+    margin-bottom: 20px;
+
+}
+/*--------------------------------*/
+#parte1 .btn{
+    width: 30%;
+}
+#parte1 .image{
+    display: flex;
+    justify-content: center;
+}
+#parte1 .image img{
+    width: 72%;
+}
+/*--------------------------------*/
+
+#parte2 h2{
+    color: var(--Dark-Blue);
+    font: normal normal 800 35px/55px 'Be Vietnam pro';
+}
+#parte2 p{
+    font: normal normal 400 14px/30px 'Be Vietnam pro';
+    color: var(--Dark-Grayish-Blue);
+    width: 310px;
+}
+#parte2 ul{
+    list-style: none;
+}
+#parte2 li{
+    display: flex;
+    align-items: baseline;
+}
+
+#parte2 ul li .number{
+    background-color: var(--Bright-Red);
+    color: #fff;
+    font: normal normal 400 16px/20px 'Be Vietnam pro';
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: .7rem;
+    width: 60px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#parte2 ul li h3{
+    font: normal normal 700 25px/30px 'Be Vietnam pro';
+    color: var(--Dark-Blue);
+}
+#parte2 ul li p{
+    width: 100%;
+    padding-right: 30px;
+}
+/*--------------------------------*/
+
+#carousel h2{
+    color: var(--Dark-Blue);
+    font: normal normal 800 35px/55px 'Be Vietnam pro';
+    margin: 40px 0;
+
+}
+#carousel .item .box-topo, #carousel .btn-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#carousel .item .box-topo img{
+    width: 15%;
+    position: relative;
+    bottom: -18px;
+}
+
+#carousel .item .box-item h4{
+    color: var(--Dark-Blue);
+    font: normal normal 500 18px/55px 'Be Vietnam pro';
+    margin: 0;
+}
+#carousel .item .box-item{
+    background-color: var(--Vary-Light-Gray);
+    padding: 1rem 0;
+}
+#carousel .item .box-item p{
+    font: normal normal 400 14px/30px 'Be Vietnam pro';
+    color: var(--Dark-Grayish-Blue);
+    padding-right: 0;
+}
+#carousel .btn-carousel{
+    margin: 3rem 0 5rem 0;
+}
+#carousel .btn-carousel .btn{
+    width: 15%;
+}
+/*--------------------------------*/
+#pre-footer{
+    background: var(--Bright-Red) url('./images/bg-simplify-section-desktop.svg') no-repeat;
+    background-position: center bottom;
+    padding: 3rem 0;
+}
+#pre-footer .col-6:last-child{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#pre-footer .content h2{
+    color: var(--Very-Pale-Red);
+    font: normal normal 800 35px/40px 'Be Vietnam pro';
+    padding-right: 100px;
+}
+
+#pre-footer .btn-prefooter .btn{
+    background-color: var(--Very-Pale-Red);
+    color: var(--Bright-Red);
+    width: 100%;
+}
+
+/*FOOTER*/
+footer{
+    background-color: var(--Very-Dark-Blue);
+    padding: 3rem 0 1rem 0;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 68px 0 0 0;
+}
+footer ul.medias li{
+    margin-right: 10px;
+}
+footer nav{
+    list-style: none;
+}
+footer nav li a{
+    color: var(--Very-Pale-Red);
+    font: normal normal 300 16px/30px 'Be Vietnam pro';
+    text-decoration: none;
+}
+footer nav li a:hover{
+    color: var(--Very-Pale-Red);
+}
+footer form input{
+    padding: .3rem;
+    border:1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    outline: none;
+    font: normal normal 400 13px/30px 'Be Vietnam pro';
+    width: 70%;
+
+}
+footer form .btn{
+    box-shadow: none;
+    width: 23%;
+}
+footer .copy{
+    color: var(--Very-Pale-Red);
+    font: normal normal 400 13px/30px 'Be Vietnam pro';
+    margin-top: 50px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--Very-Pale-Red);
+    margin-top: 2rem;
+}
+.attribution a { 
+    color: var(--Very-Pale-Red);
+}
+
+.imagem{
+    position: absolute;
+    top: -222px;
+    right: -200px;
+    z-index: -1;
+    width: 54%;
+}
+#parte2{
+    position: relative;
+}
+.pt2{
+    position: absolute;
+    bottom: -424px;
+    left: -376px;
+    z-index: -1;
+    width: 47%;
+}
+body{
+    overflow-x: hidden;
+}
