@@ -1,0 +1,323 @@
+//
+//  LETTER STYLE:
+// --------------------
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;400;500&display=swap');
+
+//
+//  COLORS:
+// --------------------
+$White: hsl(0, 0%, 100%);
+$Black: hsl(0, 0%, 0%);
+$Dark-Gray: hsl(0, 0%, 55%);
+$Very-Dark-Gray: hsl(0, 0%, 41%);
+
+*{
+    list-style: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    transition: all .4s linear;
+}
+nav li a{
+    border-bottom: 1px solid transparent;
+    
+}
+nav li a:hover{
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+//
+//  HEADER:
+// --------------------
+#header_section{
+    background: url('../images/desktop/image-hero.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    @media (max-width: 991px){
+        &{
+            height: 100%;
+        }
+    }
+
+    header{
+        padding-top: 3rem;
+
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+
+            .mob{
+                display: none;
+            }
+        }
+        .burg{
+            display: none;
+        }
+        nav li a{
+            color: #fff;
+            text-decoration: none;
+            font: normal normal 400 20px/25px Josefin Sans;
+        }
+    }
+    .box_complementar{
+        display: flex;
+        align-items: center;
+        margin: 8rem 0;
+
+        .box_immersive{
+            border: 2px solid #fff;
+            padding: 1rem;
+            width: 55%;
+    
+            h1{
+                color: #fff;
+                font: normal normal 300 50px/65px Alata;
+                letter-spacing: 1rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+//
+//  BANNER:
+// --------------------
+#banner{
+    margin: 8rem 0;
+    
+
+    .auxiliar{
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+
+        .right{
+            background: #fff;
+            padding: 3.5em;
+            // display: flex;
+            // justify-content: center;    
+            // align-items: center;
+            // flex-direction: column;
+            text-align: left;
+            height: 60%;
+            position: absolute;
+            right: 0;
+            width: 55%;
+
+            h1{
+                font: normal normal 300 40px/45px Alata;
+                text-transform: uppercase;
+                color: $Black;
+                padding-bottom: 1rem;
+            }
+            p{
+                font: normal normal 400 16px/25px Josefin Sans;
+                color: $Dark-Gray;
+            }
+        }
+    }
+}
+
+// 
+// FOOTER - DEFAULT
+// ---------------------------------
+#creations{
+    margin-bottom: 8rem;
+
+    h2{
+        font: normal normal 300 25px/40px Alata;
+        color: $Black;
+        text-transform: uppercase;
+        letter-spacing: .8rem;
+    }
+
+    .button__box{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        .btn{
+            border: 1px solid black;
+            border-radius: 0px;
+            width: 25%;
+            font: 300 16px / 20px Alata;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn:hover{
+            background: $Black;
+            color: #fff;
+        }
+    }
+
+    .images__container{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 15px;
+
+        .image__title{
+            position: relative;
+
+            p{
+                font: normal normal 300 20px/25px Alata;
+                color: #bcbcbc;
+                text-transform: uppercase;
+                position: absolute;
+                bottom: 0;
+                letter-spacing: .3rem;
+                padding-left: 2.5rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
+
+// 
+// FOOTER:
+// ---------------------------------
+footer{
+    background: $Black;
+    padding: 2rem 0;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & .row:last-child{
+        margin-top: 1rem;
+    } 
+
+    nav li a{
+        color: #fff;
+        text-decoration: none;
+        font: normal normal 400 18px/25px Josefin Sans;
+    }
+    p{
+        text-align: right;
+        color: $Very-Dark-Gray;
+        font: normal normal 300 16px/25px Alata;
+
+    }
+    .footer_auxiliar{
+        display: flex;
+        justify-content: flex-end;
+        img:not(img:first-child){
+            margin-left: 16px;
+        }
+    }
+}
+// 
+// FOOTER - DEFAULT
+// ---------------------------------
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 991px){
+    #header_section header .button-row{
+        display: flex;
+        justify-content: end;
+
+        .burg{
+            display: block;
+            background: none;
+        }
+    }
+    #header_section header nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: normal;
+        background: #000;
+        z-index: 999;
+        padding: 2rem;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        &.open{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .mob{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+
+            .btn-close{
+                color: #fff;
+                filter: invert(1);
+            }
+        }
+        li {
+           a{
+                color: $Dark-Gray;
+                letter-spacing: .3rem;
+                text-transform: uppercase;
+            } 
+
+            margin-bottom: 1rem;
+        }
+        
+    }
+
+    #header_section .box_complementar .box_immersive,
+    .left img{
+        width: 100%;
+    }
+    #header_section .box_complementar .box_immersive h1{
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    #banner {
+        margin: 4rem 0;
+        .auxiliar{
+            flex-direction: column;
+
+            .right{
+                height: 100%;
+                width: 100%;
+                position: relative;
+                padding: 0;
+                margin-top: 3rem;
+            }
+        }
+    }
+
+    #creations{
+        .button__box{
+            width: 100%;
+            .btn{
+                width: 100%;
+            }
+        }
+        .images__container{
+            place-items: center;
+        }
+    }
+
+    footer{
+        *:not(.footer_auxiliar){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer_auxiliar{
+            justify-content: center;
+            align-items: center; 
+            margin: 1rem 0;
+        }
+        p{
+            margin-top: 1rem;
+        }
+    }
+}
