@@ -257,7 +257,13 @@ footer .footer_auxiliar img:not(img:first-child) {
   #creations .images__container {
     place-items: center;
   }
-
+}
+@media (max-width: 991px) and (max-width: 991px) {
+  #creations .nomob {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
   footer *:not(.footer_auxiliar) {
     display: flex;
     flex-direction: column;
@@ -271,5 +277,11 @@ footer .footer_auxiliar img:not(img:first-child) {
   }
   footer p {
     margin-top: 1rem;
+  }
+}
+@media (max-width: 991px) {
+  #creations h2 {
+    font-size: 18px;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

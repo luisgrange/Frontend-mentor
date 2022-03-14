@@ -302,6 +302,13 @@ footer{
         .images__container{
             place-items: center;
         }
+        .nomob{
+            @media(max-width: 991px){
+                &{
+                    display: none;
+                }
+            }
+        }
     }
 
     footer{
@@ -319,5 +326,12 @@ footer{
         p{
             margin-top: 1rem;
         }
+    }
+}
+
+@media (max-width: 991px){
+    #creations h2{
+        font-size: 18px;
+        text-align: center;
     }
 }
